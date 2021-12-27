@@ -1,9 +1,10 @@
 ---
 - hosts: all
+  become: yes
   tasks:
   - name: i want to install webserver to ubunto
   apt: 
   name: apache2
   state: present
-  
+
 
