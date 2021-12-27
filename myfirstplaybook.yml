@@ -1,0 +1,13 @@
+---
+- hosts: all
+  become: yes
+  tasks: 
+  - name: i want to install git on ubunto node
+    apt:
+      name: git
+      state: present
+  - name: install trree on ubunto node
+    apt:
+     name: tree
+     state: present
+
