@@ -9,4 +9,4 @@
   - name: i want to start webserver on anisble ubunto node
     service:
       name: apache2
-      state: present
+      state: started
