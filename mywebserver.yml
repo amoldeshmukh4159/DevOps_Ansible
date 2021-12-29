@@ -2,7 +2,11 @@
 - hosts: all
   become: yes
   tasks: 
-  - name: i want to install git on ubunto node
+  - name: i want to install webserver on anisble ubunto node
     apt:
+      name: apache2
+      state: present
+  - name: i want to start webserver on anisble ubunto node
+    service:
       name: apache2
       state: present
